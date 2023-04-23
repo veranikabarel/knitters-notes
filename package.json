@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+     "test:e2e": "playwright test"
   },
   "dependencies": {
     "@next/font": "13.3.1",
@@ -29,6 +30,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.32.3",
     "prisma": "4.6.1",
     "ts-node": "10.9.1",
     "tsconfig-paths": "4.1.1"
