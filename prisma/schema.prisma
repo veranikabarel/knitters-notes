@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String    @id @default(uuid())
+  email    String    @unique
+  name     String?
+  projects Project[]
+  patterns Pattern[]
+  stash    Stash[]
+  yarn     Yarn[]
+  tools    Tools[]
+}
+
+enum PROJECT_STATUS {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}
+
+model Project {
+  id          String         @id @default(uuid())
+  name        String
+  description String
+  User        User           @relation(fields: [userId], references: [id])
+  userId      String
+  status      PROJECT_STATUS @default(NOT_STARTED)
+}
+
+model Pattern {
+  id          String @id @default(uuid())
+  name        String
+  description String
+  User        User   @relation(fields: [userId], references: [id])
+  userId      String
+}
+
+model Stash {
+  id     String  @id @default(uuid())
+  User   User    @relation(fields: [userId], references: [id])
+  userId String
+  yarn   Yarn[]
+  tools  Tools[]
+}
+
+model Yarn {
+  id          String  @id @default(uuid())
+  name        String
+  description String
+  User        User    @relation(fields: [userId], references: [id])
+  userId      String
+  stash       Stash?  @relation(fields: [stashId], references: [id])
+  stashId     String?
+}
+
+enum TOOL_TYPE {
+  NEEDLES
+  CROCHET
+}
+
+model Tools {
+  id          String    @id @default(uuid())
+  name        String
+  size        Float
+  toolType    TOOL_TYPE
+  description String
+  User        User      @relation(fields: [userId], references: [id])
+  userId      String
+  stash       Stash?    @relation(fields: [stashId], references: [id])
+  stashId     String?
+}
