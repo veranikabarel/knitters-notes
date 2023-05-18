@@ -11,6 +11,11 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/,
       },
+      docs: {
+        source: {
+          state: 'open',
+        },
+      },
     },
   },
 };

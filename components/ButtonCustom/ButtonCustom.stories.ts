@@ -4,6 +4,7 @@ import {Meta} from '@storybook/react';
 export default {
   title: 'ui/Button',
   component: ButtonCustom,
+
   args: {
     children: 'I am a Button',
   },
