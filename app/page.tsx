@@ -6,9 +6,9 @@ export default function Home() {
     <Grid container height="100vh" alignItems="center" justifyContent="center" direction="column">
       <h1>Welcome to Knitters Notes</h1>
       <Stack direction="row" columnGap={1}>
-        <ButtonCustom variant="text">Contained</ButtonCustom>
+        <ButtonCustom variant="text">Text</ButtonCustom>
         <ButtonCustom variant="contained">Contained</ButtonCustom>
-        <ButtonCustom variant="outlined">Contained</ButtonCustom>
+        <ButtonCustom variant="outlined">Outlined</ButtonCustom>
       </Stack>
     </Grid>
   );

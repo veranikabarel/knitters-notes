@@ -10,6 +10,7 @@ const config: StorybookConfig = {
     '@storybook/addon-interactions',
     '@storybook/addon-styling',
     '@storybook/addon-docs',
+    '@storybook/addon-controls',
   ],
   framework: {
     name: '@storybook/nextjs',

@@ -42,6 +42,8 @@
   "devDependencies": {
     "@playwright/test": "^1.32.3",
     "@storybook/addon-a11y": "^7.0.12",
+    "@storybook/addon-actions": "^7.0.12",
+    "@storybook/addon-controls": "^7.0.12",
     "@storybook/addon-docs": "^7.0.12",
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-interactions": "^7.0.12",
