@@ -1,14 +1,10 @@
-const DashboardLayout = ({
-  children,
-}: {
-  children: React.ReactNode,
-}) => {
+const DashboardLayout = ({children}: {children: React.ReactNode}) => {
   return (
     <section>
       <nav></nav>
       {children}
     </section>
   );
-}
+};
 
-export default DashboardLayout
+export default DashboardLayout;

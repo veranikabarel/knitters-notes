@@ -1,13 +1,5 @@
-const LoginLayout = ({
-  children,
-}: {
-  children: React.ReactNode,
-}) => {
-  return (
-    <section>
-      {children}
-    </section>
-  );
-}
+const LoginLayout = ({children}: {children: React.ReactNode}) => {
+  return <section>{children}</section>;
+};
 
-export default LoginLayout
+export default LoginLayout;
