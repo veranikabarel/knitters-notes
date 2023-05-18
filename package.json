@@ -7,12 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "prisma": {
     "seed": "ts-node -P tsconfig-seed.json -r tsconfig-paths/register --transpileOnly prisma/seed.ts"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.1",
     "@next/font": "13.3.1",
     "@prisma/client": "4.6.1",
     "@types/node": "18.16.0",
@@ -34,7 +40,16 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.32.3",
+    "@storybook/addon-essentials": "^7.0.12",
+    "@storybook/addon-interactions": "^7.0.12",
+    "@storybook/addon-links": "^7.0.12",
+    "@storybook/blocks": "^7.0.12",
+    "@storybook/nextjs": "^7.0.12",
+    "@storybook/react": "^7.0.12",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "eslint-plugin-storybook": "^0.6.12",
     "prisma": "4.6.1",
+    "storybook": "^7.0.12",
     "ts-node": "10.9.1",
     "tsconfig-paths": "4.1.1"
   }
