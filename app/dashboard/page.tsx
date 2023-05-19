@@ -1,6 +1,6 @@
 'use client';
-import {CardCustom} from '@/components/CardCustom/CardCustom.styled';
-import {Grid, Stack} from '@mui/material';
+import { CardCustom } from '@/components/CardCustom/CardCustom.styled';
+import { Grid, Stack } from '@mui/material';
 
 const projects = [
   {
@@ -39,7 +39,7 @@ export default function Home() {
       direction="column"
     >
       <h1>Dashboard</h1>
-      <Stack direction="row" columnGap={1}>
+      <Stack direction="row" columnGap={3} bgcolor={'secondary.main'} p={2} borderRadius={1}>
         {projects.map(project => (
           <CardCustom
             key={project.title}

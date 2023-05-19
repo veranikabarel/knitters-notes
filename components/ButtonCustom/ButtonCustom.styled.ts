@@ -6,6 +6,7 @@ export const ButtonCustom = styled(Button)<ButtonProps>`
   max-width: 160px;
   border-radius: 50px;
   size: ${({theme}) => theme.typography.body1};
+  text-transform: capitalize;
 
   &.MuiButton-text {
     color: ${({theme}) => theme.palette.text.primary};

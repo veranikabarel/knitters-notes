@@ -1,5 +1,5 @@
-import {ButtonCustom} from '@/components/ButtonCustom/ButtonCustom.styled';
-import {Card as CardBase, CardProps} from '@mui/material';
+import { ButtonCustom } from '@/components/ButtonCustom/ButtonCustom.styled';
+import { Card as CardBase, CardProps } from '@mui/material';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -23,7 +23,7 @@ export const Card: React.FC<CardPropsCustom> = ({
   ...props
 }) => {
   return (
-    <CardBase sx={{maxWidth: 345}} {...props}>
+    <CardBase sx={{ maxWidth: 345 }} {...props}>
       <Image src={img} alt={alt} width={150} height={150} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -32,7 +32,7 @@ export const Card: React.FC<CardPropsCustom> = ({
         <Typography variant="body2">{description}</Typography>
       </CardContent>
       <CardActions>
-        <ButtonCustom size="small" variant="outlined">
+        <ButtonCustom size="small" variant="contained">
           {action}
         </ButtonCustom>
       </CardActions>
