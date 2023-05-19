@@ -1,43 +1,72 @@
 import { ButtonCustom } from '@/components/ButtonCustom/ButtonCustom.styled';
-import { ButtonProps } from '@mui/material';
+import type { Meta, StoryObj } from '@storybook/react';
 
-export default {
-  title: 'ui/ButtonCustom',
+
+const meta: Meta<typeof ButtonCustom> = {
+  title: 'UI/Button',
   component: ButtonCustom,
+  tags: ['autodocs'],
   args: {
-    children: 'I am a button!',
+    children: 'I am a button',
   },
+
   argTypes: {
     children: {
       control: { type: 'text' },
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: 'I am a button' },
+      },
     },
     variant: {
       control: { type: 'radio' },
       options: ['text', 'outlined', 'contained'],
       description: 'Variant of the button',
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: 'text' },
+      },
     },
-    onClick: { action: 'The button was clicked' },
-    disable: {
-      control: { type: 'boolean' },
-    }
-
-  }
-}
-
-const Template = (args: ButtonProps) => <ButtonCustom {...args} />
-
-export const Button = Template.bind({
-  parameters: {
-    docs: {
-      source: {
-        code: `<ButtonCustom variant="text">Text</ButtonCustom>`,
-        language: 'jsx',
-      }
-    }
+    size: {
+      control: { type: 'radio' },
+      options: ['small', 'medium', 'large'],
+      description: 'Size of the button',
+      table: {
+        type: { summary: 'small | medium | large' },
+        defaultValue: { summary: 'medium' },
+      },
+    },
+    onClick: {
+      action: 'The button was clicked',
+      description: 'Optional click handler',
+      table: {
+        type: { summary: '() => void' },
+        category: 'Events',
+      },
+    },
 
   },
-}) as ButtonProps
+};
 
+export default meta;
+type Story = StoryObj<typeof ButtonCustom>;
 
+export const Text: Story = {
+  args: {
+    variant: 'text',
+  },
+};
+
+export const Contained: Story = {
+  args: {
+    variant: 'contained',
+  },
+};
+
+export const Outlined: Story = {
+  args: {
+    variant: 'outlined',
+  },
+};
 
 
