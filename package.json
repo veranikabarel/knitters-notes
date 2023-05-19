@@ -55,12 +55,13 @@
     "@storybook/nextjs": "^7.0.12",
     "@storybook/react": "^7.0.12",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "husky": "^8.0.0",
     "prettier": "2.8.8",
     "prisma": "4.6.1",
     "storybook": "^7.0.12",
     "ts-node": "10.9.1",
-    "tsconfig-paths": "4.1.1",
-    "husky": "^8.0.0"
+    "tsconfig-paths": "4.1.1"
   }
 }
