@@ -1,6 +1,6 @@
 'use client';
-import {ButtonCustom} from '@/components/ButtonCustom/ButtonCustom.styled';
-import {Grid, Stack} from '@mui/material';
+import { ButtonCustom } from '@/components/ButtonCustom/ButtonCustom.styled';
+import { Grid, Stack } from '@mui/material';
 export default function Home() {
   return (
     <Grid
@@ -11,7 +11,7 @@ export default function Home() {
       direction="column"
     >
       <h1>Welcome to Knitters Notes</h1>
-      <Stack direction="row" columnGap={1}>
+      <Stack direction="row" columnGap={1} mb={2}>
         <ButtonCustom variant="text">Text</ButtonCustom>
         <ButtonCustom variant="contained">Contained</ButtonCustom>
         <ButtonCustom variant="outlined">Outlined</ButtonCustom>
