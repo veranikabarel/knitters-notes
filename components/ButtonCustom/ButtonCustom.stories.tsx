@@ -1,5 +1,5 @@
-import type {Meta, StoryObj} from '@storybook/react';
-import {ButtonCustom} from './ButtonCustom.styled';
+import type { Meta, StoryObj } from '@storybook/react';
+import { ButtonCustom } from './ButtonCustom.styled';
 
 const meta: Meta<typeof ButtonCustom> = {
   title: 'UI/Button',
@@ -11,35 +11,35 @@ const meta: Meta<typeof ButtonCustom> = {
 
   argTypes: {
     children: {
-      control: {type: 'text'},
+      control: { type: 'text' },
       table: {
-        type: {summary: 'string'},
-        defaultValue: {summary: 'I am a button'},
+        type: { summary: 'string' },
+        defaultValue: { summary: 'I am a button' },
       },
     },
     variant: {
-      control: {type: 'radio'},
+      control: { type: 'radio' },
       options: ['text', 'outlined', 'contained'],
       description: 'Variant of the button',
       table: {
-        type: {summary: 'string'},
-        defaultValue: {summary: 'text'},
+        type: { summary: 'string' },
+        defaultValue: { summary: 'text' },
       },
     },
     size: {
-      control: {type: 'radio'},
+      control: { type: 'radio' },
       options: ['small', 'medium', 'large'],
       description: 'Size of the button',
       table: {
-        type: {summary: 'small | medium | large'},
-        defaultValue: {summary: 'medium'},
+        type: { summary: 'small | medium | large' },
+        defaultValue: { summary: 'medium' },
       },
     },
     onClick: {
       action: 'The button was clicked',
       description: 'Optional click handler',
       table: {
-        type: {summary: '() => void'},
+        type: { summary: '() => void' },
         category: 'Events',
       },
     },

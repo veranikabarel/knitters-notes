@@ -1,6 +1,6 @@
 'use client';
-import {ButtonCustom} from '@/components/ButtonCustom/ButtonCustom.styled';
-import {Grid, Stack} from '@mui/material';
+import { ButtonCustom } from '@/components/ButtonCustom/ButtonCustom.styled';
+import { Grid, Stack } from '@mui/material';
 export default function Home() {
   return (
     <Grid

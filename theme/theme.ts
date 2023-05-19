@@ -1,9 +1,9 @@
 'use client';
 
-import {typography} from '@/theme/typography';
-import {createTheme} from '@mui/material/styles';
-import {Roboto} from 'next/font/google';
-import {colors} from './colors';
+import { typography } from '@/theme/typography';
+import { createTheme } from '@mui/material/styles';
+import { Roboto } from 'next/font/google';
+import { colors } from './colors';
 
 export const inter = Roboto({
   subsets: ['latin'],

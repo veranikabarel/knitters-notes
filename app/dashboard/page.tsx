@@ -39,7 +39,13 @@ export default function Home() {
       direction="column"
     >
       <h1>Dashboard</h1>
-      <Stack direction="row" columnGap={3} bgcolor={'secondary.main'} p={2} borderRadius={1}>
+      <Stack
+        direction="row"
+        columnGap={3}
+        bgcolor={'secondary.main'}
+        p={2}
+        borderRadius={1}
+      >
         {projects.map(project => (
           <CardCustom
             key={project.title}
