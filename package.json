@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "pretty": "prettier --write .",
     "test:e2e": "playwright test",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
   },
   "prisma": {
     "seed": "ts-node -P tsconfig-seed.json -r tsconfig-paths/register --transpileOnly prisma/seed.ts"
@@ -53,7 +55,9 @@
     "@storybook/nextjs": "^7.0.12",
     "@storybook/react": "^7.0.12",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "husky": "^8.0.0",
     "prettier": "2.8.8",
     "prisma": "4.6.1",
     "storybook": "^7.0.12",

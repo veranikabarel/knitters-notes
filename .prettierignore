@@ -3,3 +3,4 @@ build
 dist
 .next
 package-lock.json
+.storybook-static
