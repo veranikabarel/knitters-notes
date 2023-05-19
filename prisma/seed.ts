@@ -1,5 +1,5 @@
-import { db } from "@/libs/db";
-import { PROJECT_STATUS } from "@prisma/client";
+import {db} from '@/libs/db';
+import {PROJECT_STATUS} from '@prisma/client';
 
 const getRandomTaskStatus = () => {
   const statuses = [
@@ -12,11 +12,11 @@ const getRandomTaskStatus = () => {
 
 async function main() {
   const user = await db.user.upsert({
-    where: { email: "user@email.com" },
+    where: {email: 'user@email.com'},
     update: {},
     create: {
-      email: "user@email.com",
-      name: "user",
+      email: 'user@email.com',
+      name: 'user',
       projects: {
         create: new Array(5).fill(1).map((_, i) => ({
           name: `Project ${i}`,
@@ -30,13 +30,13 @@ async function main() {
     },
   });
 
-  console.log({ user });
+  console.log({user});
 }
 main()
   .then(async () => {
     await db.$disconnect();
   })
-  .catch(async (e) => {
+  .catch(async e => {
     console.error(e);
     await db.$disconnect();
     process.exit(1);
