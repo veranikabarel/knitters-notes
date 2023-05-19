@@ -1,5 +1,5 @@
-import { ButtonCustom } from '@/components/ButtonCustom/ButtonCustom.styled';
-import { Card as CardBase, CardProps } from '@mui/material';
+import {ButtonCustom} from '@/components/ButtonCustom/ButtonCustom.styled';
+import {Card as CardBase, CardProps} from '@mui/material';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -13,26 +13,29 @@ export interface CardPropsCustom extends CardProps {
   action: string;
 }
 
-export const Card: React.FC<CardPropsCustom> = ({ children, img, alt, title, description, action, ...props }) => {
+export const Card: React.FC<CardPropsCustom> = ({
+  children,
+  img,
+  alt,
+  title,
+  description,
+  action,
+  ...props
+}) => {
   return (
-    <CardBase sx={{ maxWidth: 345 }} {...props}>
-      <Image
-        src={img}
-        alt={alt}
-        width={150}
-        height={150}
-      />
+    <CardBase sx={{maxWidth: 345}} {...props}>
+      <Image src={img} alt={alt} width={150} height={150} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography variant="body2">
-          {description}
-        </Typography>
+        <Typography variant="body2">{description}</Typography>
       </CardContent>
       <CardActions>
-        <ButtonCustom size="small" variant='outlined'>{action}</ButtonCustom>
+        <ButtonCustom size="small" variant="outlined">
+          {action}
+        </ButtonCustom>
       </CardActions>
     </CardBase>
   );
-}
+};
