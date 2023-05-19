@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "pretty": "prettier --write .",
     "test:e2e": "playwright test",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
   },
   "prisma": {
     "seed": "ts-node -P tsconfig-seed.json -r tsconfig-paths/register --transpileOnly prisma/seed.ts"
@@ -58,6 +60,7 @@
     "prisma": "4.6.1",
     "storybook": "^7.0.12",
     "ts-node": "10.9.1",
-    "tsconfig-paths": "4.1.1"
+    "tsconfig-paths": "4.1.1",
+    "husky": "^8.0.0"
   }
 }

@@ -1,5 +1,5 @@
-import {Button} from '@/components/ButtonCustom/Button';
 import {ButtonProps, styled} from '@mui/material';
+import {Button} from './Button';
 
 export const ButtonCustom = styled(Button)<ButtonProps>`
   height: 30px;
