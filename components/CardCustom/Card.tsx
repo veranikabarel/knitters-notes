@@ -1,25 +1,25 @@
-import { ButtonCustom } from '@/components/ButtonCustom/ButtonCustom.styled';
-import { Card as CardBase, CardProps } from '@mui/material';
+import { Card as CardBase, CardProps, Link } from '@mui/material';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 
+
 export interface CardPropsCustom extends CardProps {
+  id: string;
   img: string;
   alt: string;
   title: string;
   description: string;
-  action: string;
 }
 
 export const Card: React.FC<CardPropsCustom> = ({
   children,
+  id,
   img,
   alt,
   title,
   description,
-  action,
   ...props
 }) => {
   return (
@@ -32,9 +32,12 @@ export const Card: React.FC<CardPropsCustom> = ({
         <Typography variant="body2">{description}</Typography>
       </CardContent>
       <CardActions>
-        <ButtonCustom size="small" variant="contained">
-          {action}
-        </ButtonCustom>
+        <Link
+          underline="hover"
+          href={`/project/${id}`}
+        >
+          Learn more
+        </Link>
       </CardActions>
     </CardBase>
   );
