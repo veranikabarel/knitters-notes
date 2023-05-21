@@ -1,6 +1,7 @@
 'use client';
 import { ButtonCustom } from '@/components/ButtonCustom/ButtonCustom.styled';
 import { Grid, Stack } from '@mui/material';
+import Link from 'next/link';
 export default function Home() {
   return (
     <Grid
@@ -15,6 +16,7 @@ export default function Home() {
         <ButtonCustom variant="text">Text</ButtonCustom>
         <ButtonCustom variant="contained">Contained</ButtonCustom>
         <ButtonCustom variant="outlined">Outlined</ButtonCustom>
+        <Link href="/dashboard">Go to dashboard</Link>
       </Stack>
     </Grid>
   );

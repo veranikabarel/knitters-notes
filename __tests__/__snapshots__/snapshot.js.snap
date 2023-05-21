@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dashboard page unchanged 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column css-xiki9i-MuiGrid-root"
+  >
+    <h1>
+      Dashboard
+    </h1>
+    <div
+      class="MuiStack-root css-18qofsj-MuiStack-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-16wdo34-MuiPaper-root-MuiCard-root"
+      >
+        <img
+          alt="Project 1"
+          data-nimg="1"
+          decoding="async"
+          height="150"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fwool.png&w=384&q=75"
+          srcset="/_next/image?url=%2Fimages%2Fwool.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fwool.png&w=384&q=75 2x"
+          style="color: transparent;"
+          width="150"
+        />
+        <div
+          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+          >
+            Project 1
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-17sj1r4-MuiTypography-root-MuiLink-root"
+            href="/project/1"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-16wdo34-MuiPaper-root-MuiCard-root"
+      >
+        <img
+          alt="Project 2"
+          data-nimg="1"
+          decoding="async"
+          height="150"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fwool.png&w=384&q=75"
+          srcset="/_next/image?url=%2Fimages%2Fwool.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fwool.png&w=384&q=75 2x"
+          style="color: transparent;"
+          width="150"
+        />
+        <div
+          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+          >
+            Project 2
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-17sj1r4-MuiTypography-root-MuiLink-root"
+            href="/project/2"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-16wdo34-MuiPaper-root-MuiCard-root"
+      >
+        <img
+          alt="Project 3"
+          data-nimg="1"
+          decoding="async"
+          height="150"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fwool.png&w=384&q=75"
+          srcset="/_next/image?url=%2Fimages%2Fwool.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fwool.png&w=384&q=75 2x"
+          style="color: transparent;"
+          width="150"
+        />
+        <div
+          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+          >
+            Project 3
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-17sj1r4-MuiTypography-root-MuiLink-root"
+            href="/project/3"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column css-xiki9i-MuiGrid-root"
+  >
+    <h1>
+      Dashboard
+    </h1>
+    <div
+      class="MuiStack-root css-18qofsj-MuiStack-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-16wdo34-MuiPaper-root-MuiCard-root"
+      >
+        <img
+          alt="Project 1"
+          data-nimg="1"
+          decoding="async"
+          height="150"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fwool.png&w=384&q=75"
+          srcset="/_next/image?url=%2Fimages%2Fwool.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fwool.png&w=384&q=75 2x"
+          style="color: transparent;"
+          width="150"
+        />
+        <div
+          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+          >
+            Project 1
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-17sj1r4-MuiTypography-root-MuiLink-root"
+            href="/project/1"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-16wdo34-MuiPaper-root-MuiCard-root"
+      >
+        <img
+          alt="Project 2"
+          data-nimg="1"
+          decoding="async"
+          height="150"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fwool.png&w=384&q=75"
+          srcset="/_next/image?url=%2Fimages%2Fwool.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fwool.png&w=384&q=75 2x"
+          style="color: transparent;"
+          width="150"
+        />
+        <div
+          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+          >
+            Project 2
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-17sj1r4-MuiTypography-root-MuiLink-root"
+            href="/project/2"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-16wdo34-MuiPaper-root-MuiCard-root"
+      >
+        <img
+          alt="Project 3"
+          data-nimg="1"
+          decoding="async"
+          height="150"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fwool.png&w=384&q=75"
+          srcset="/_next/image?url=%2Fimages%2Fwool.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fwool.png&w=384&q=75 2x"
+          style="color: transparent;"
+          width="150"
+        />
+        <div
+          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+          >
+            Project 3
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-17sj1r4-MuiTypography-root-MuiLink-root"
+            href="/project/3"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
