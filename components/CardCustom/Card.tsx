@@ -4,7 +4,6 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 
-
 export interface CardPropsCustom extends CardProps {
   id: string;
   img: string;
@@ -32,10 +31,7 @@ export const Card: React.FC<CardPropsCustom> = ({
         <Typography variant="body2">{description}</Typography>
       </CardContent>
       <CardActions>
-        <Link
-          underline="hover"
-          href={`/project/${id}`}
-        >
+        <Link underline="hover" href={`/project/${id}`}>
           Learn more
         </Link>
       </CardActions>
