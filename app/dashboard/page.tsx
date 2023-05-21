@@ -4,7 +4,6 @@ import projects from '@/mock/projects.json';
 import { Grid, Stack } from '@mui/material';
 
 export default function Dashboard() {
-
   return (
     <Grid
       container
@@ -22,9 +21,7 @@ export default function Dashboard() {
         borderRadius={1}
       >
         {projects.projects.map(project => (
-          <CardCustom key={project.title} {...project} >
-
-          </CardCustom>
+          <CardCustom key={project.title} {...project}></CardCustom>
         ))}
       </Stack>
     </Grid>

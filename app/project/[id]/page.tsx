@@ -1,9 +1,16 @@
 'use client';
-import { Grid, Link, Stack, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
-
+import {
+  Grid,
+  Link,
+  Stack,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+} from '@mui/material';
 
 export default function Project() {
-
   return (
     <Grid
       container
@@ -21,12 +28,11 @@ export default function Project() {
         borderRadius={1}
         mb={2}
       >
-        <Table sx={{ minWidth: 650 }} aria-label="simple table" >
+        <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead sx={{ fontWeight: 'bold' }}>
             <TableRow>
               <TableCell>Project</TableCell>
               <TableCell>Description</TableCell>
-
             </TableRow>
           </TableHead>
           <TableBody>
@@ -37,10 +43,7 @@ export default function Project() {
           </TableBody>
         </Table>
       </Stack>
-      <Link
-        underline="hover"
-        href={'/dashboard'}
-      >
+      <Link underline="hover" href={'/dashboard'}>
         Back to dashboard
       </Link>
     </Grid>
