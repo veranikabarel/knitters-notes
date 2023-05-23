@@ -19,7 +19,7 @@ const meta: Meta<typeof ButtonCustom> = {
     },
     variant: {
       control: { type: 'radio' },
-      options: ['text', 'outlined', 'contained'],
+      options: ['contained', 'outlined', 'text'],
       description: 'Variant of the button',
       table: {
         type: { summary: 'string' },
@@ -49,20 +49,20 @@ const meta: Meta<typeof ButtonCustom> = {
 export default meta;
 type Story = StoryObj<typeof ButtonCustom>;
 
-export const Text: Story = {
-  args: {
-    variant: 'text',
-  },
-};
-
-export const Contained: Story = {
+export const Primary: Story = {
   args: {
     variant: 'contained',
   },
 };
 
-export const Outlined: Story = {
+export const Secondary: Story = {
   args: {
     variant: 'outlined',
+  },
+};
+
+export const Text: Story = {
+  args: {
+    variant: 'text',
   },
 };

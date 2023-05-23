@@ -1,27 +1,12 @@
-export const typography = {
-  h1: {
-    fontWeight: 700,
-    fontSize: '56px',
-    lineHeight: '64px',
-  },
-  h2: {
-    fontWeight: 700,
-    fontSize: '40px',
-    lineHeight: '48px',
-  },
-  h3: {
-    fontWeight: 700,
-    fontSize: '32px',
-    lineHeight: '40px',
-  },
-  subtitle1: {
-    fontWeight: 500,
-    fontSize: '24px',
-    lineHeight: '32px',
-  },
-  body1: {
-    fontWeight: 400,
-    fontSize: '16px',
-    lineHeight: '24px',
-  },
-} as const;
+export const primaryFont = '"Inter", sans-serif';
+
+export const typeScale = {
+  header1: '1.8rem',
+  header2: '1.6rem',
+  header3: '1.4rem',
+  header4: '1.2rem',
+  header5: '1.1rem',
+  paragraph: '1rem',
+  helperText: '0.8rem',
+  copyrightText: '0.7rem',
+};

@@ -1,24 +1,41 @@
-import { ButtonProps, styled } from '@mui/material';
+import { theme } from '@/theme/theme';
+import styled from '@emotion/styled';
+import { ButtonProps } from '@mui/material';
 import { Button } from './Button';
 
 export const ButtonCustom = styled(Button)<ButtonProps>`
-  height: 30px;
-  max-width: 160px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 2px;
+  min-width: 100px;
+  cursor: pointer;
   border-radius: 50px;
-  size: ${({ theme }) => theme.typography.body1};
-  text-transform: capitalize;
+`;
 
-  &.MuiButton-text {
-    color: ${({ theme }) => theme.palette.text.primary};
+export const ButtonCustomPrimary = styled(ButtonCustom)<ButtonProps>`
+  background-color: ${theme.palette.primary.main};
+  color: ${theme.palette.text.primary};
+  border: none;
+  &:hover {
+    background-color: ${theme.palette.secondary.main};
   }
+`;
 
-  &.MuiButton-contained {
-    color: ${({ theme }) => theme.palette.text.secondary};
-    background-color: ${({ theme }) => theme.palette.secondary.main};
+export const ButtonCustomSecondary = styled(ButtonCustom)<ButtonProps>`
+  background: none;
+  border: 2px solid ${theme.palette.primary.main};
+  color: ${theme.palette.primary.main};
+  &:hover {
+    border: 2px solid ${theme.palette.secondary.main};
+    color: ${theme.palette.secondary.main};
   }
+`;
 
-  &.MuiButton-outlined {
-    border: ${({ theme }) => `1px solid ${theme.palette.secondary.main}`};
-    color: ${({ theme }) => theme.palette.secondary.main};
+export const ButtonCustomText = styled(Button)<ButtonProps>`
+  background: none;
+  border: none;
+  color: ${theme.palette.primary.main};
+  &:hover {
+    color: ${theme.palette.secondary.main};
   }
 `;
