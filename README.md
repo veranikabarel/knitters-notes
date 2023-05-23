@@ -1,4 +1,4 @@
-Link to [design system](https://www.figma.com/file/b6LxKWOJOBLQsh7NGM8kwG/Knitters-notes-design-system?type=design&node-id=1%3A228&t=U724FrLrYp6FU93M-1) in Figma.
+Link to [Figma](https://www.figma.com/file/b6LxKWOJOBLQsh7NGM8kwG/Knitters-notes?type=design&node-id=1%3A123&t=tlrvFPSpg2T0EXJx-1) in Figma.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

@@ -1,11 +1,11 @@
 'use client';
 
-import { typography } from '@/theme/typography';
+import { colors, neutral } from '@/theme/colors';
 import { createTheme } from '@mui/material/styles';
-import { Roboto } from 'next/font/google';
-import { colors } from './colors';
+import { Inter } from 'next/font/google';
+import { typeScale } from './typography';
 
-export const inter = Roboto({
+export const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
   fallback: ['Helvetica', 'Arial', 'sans-serif'],
@@ -13,25 +13,42 @@ export const inter = Roboto({
 
 export const theme = createTheme({
   typography: {
-    h1: typography.h1,
-    h2: typography.h2,
-    h3: typography.h3,
-    subtitle1: typography.subtitle1,
-    body1: typography.body1,
+    fontFamily: inter.style.fontFamily,
+    h1: {
+      fontSize: typeScale.header1,
+    },
+    h2: {
+      fontSize: typeScale.header2,
+    },
+    h3: {
+      fontSize: typeScale.header3,
+    },
+    h4: {
+      fontSize: typeScale.header4,
+    },
+    h5: {
+      fontSize: typeScale.header5,
+    },
+    body1: {
+      fontSize: typeScale.paragraph,
+    },
+    body2: {
+      fontSize: typeScale.helperText,
+    },
+    caption: {
+      fontSize: typeScale.copyrightText,
+    },
   },
   palette: {
     primary: {
-      main: colors.violet,
+      main: colors['400'],
     },
     secondary: {
-      main: colors.yellow,
-    },
-    error: {
-      main: colors.red,
+      main: colors['200'],
     },
     text: {
-      primary: colors.black,
-      secondary: colors.white,
+      primary: neutral['100'],
+      secondary: neutral['600'],
     },
   },
 });
