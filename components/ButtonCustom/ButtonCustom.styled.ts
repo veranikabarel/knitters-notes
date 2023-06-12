@@ -14,7 +14,7 @@ export const ButtonCustom = styled(Button)<ButtonProps>`
 
 export const ButtonCustomPrimary = styled(ButtonCustom)<ButtonProps>`
   background-color: ${theme.palette.primary.main};
-  color: ${theme.palette.text.primary};
+  color: ${theme.palette.text.secondary};
   border: none;
   &:hover {
     background-color: ${theme.palette.secondary.main};
