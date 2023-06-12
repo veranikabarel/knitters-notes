@@ -1,14 +1,14 @@
 'use client';
 
-import { colors, neutral } from '@/theme/colors';
+import { colors, text } from '@/theme/colors';
 import { createTheme } from '@mui/material/styles';
-import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import { typeScale } from './typography';
 
-export const inter = Inter({
+export const inter = Montserrat({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-  fallback: ['Helvetica', 'Arial', 'sans-serif'],
+  fallback: ['Montserrat', 'sans-serif'],
 });
 
 export const theme = createTheme({
@@ -23,12 +23,6 @@ export const theme = createTheme({
     h3: {
       fontSize: typeScale.header3,
     },
-    h4: {
-      fontSize: typeScale.header4,
-    },
-    h5: {
-      fontSize: typeScale.header5,
-    },
     body1: {
       fontSize: typeScale.paragraph,
     },
@@ -41,14 +35,17 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: colors['400'],
+      main: colors.green,
     },
     secondary: {
-      main: colors['200'],
+      main: colors.yellow,
     },
     text: {
-      primary: neutral['100'],
-      secondary: neutral['600'],
+      primary: text.primary,
+      secondary: text.inverted,
+    },
+    error: {
+      main: colors.red,
     },
   },
 });
