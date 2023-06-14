@@ -1,5 +1,6 @@
 'use client';
 import Head from '@/app/head';
+import { NavbarCustom } from '@/components/NavbarCustom/NavbarCustom';
 import { theme } from '@/theme/theme';
 import createEmotionCache from '@/utils/createEmotionCache';
 import { CacheProvider, EmotionCache } from '@emotion/react';
@@ -21,7 +22,10 @@ export default function RootLayout(props: MyAppProps) {
         <Head />
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <body>{children}</body>
+          <body>
+            <NavbarCustom />
+            {children}
+          </body>
         </ThemeProvider>
       </CacheProvider>
     </html>
