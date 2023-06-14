@@ -24,7 +24,8 @@ export default function RootLayout(props: MyAppProps) {
           <CssBaseline />
           <body>
             <NavbarCustom />
-            {children}</body>
+            {children}
+          </body>
         </ThemeProvider>
       </CacheProvider>
     </html>

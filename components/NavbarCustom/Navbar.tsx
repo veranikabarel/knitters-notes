@@ -16,8 +16,12 @@ const pages = ['projects', 'notes', 'patterns', 'overwiev'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+    null,
+  );
+  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
+    null,
+  );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -70,15 +74,18 @@ function Navbar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} >
-                  <Link href={`/${page}`}
+              {pages.map(page => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Link
+                    href={`/${page}`}
                     style={{
                       textDecoration: 'none',
                       color: 'black',
-                      textTransform: 'uppercase'
-                    }}>{page}</Link>
+                      textTransform: 'uppercase',
+                    }}
+                  >
+                    {page}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -86,14 +93,18 @@ function Navbar() {
 
           {/* DESKTOP VERSION */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map(page => (
               <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Link href={`/${page}`}
+                <Link
+                  href={`/${page}`}
                   style={{
                     textDecoration: 'none',
                     color: 'white',
-                    textTransform: 'uppercase'
-                  }}>{page}</Link>
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  {page}
+                </Link>
               </MenuItem>
             ))}
           </Box>
@@ -121,13 +132,16 @@ function Navbar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
+              {settings.map(setting => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Link href={`/${setting}`} style={{
-                    textDecoration: 'none',
-                    color: 'black',
-                    textTransform: 'uppercase'
-                  }}>
+                  <Link
+                    href={`/${setting}`}
+                    style={{
+                      textDecoration: 'none',
+                      color: 'black',
+                      textTransform: 'uppercase',
+                    }}
+                  >
                     {setting}
                   </Link>
                 </MenuItem>
