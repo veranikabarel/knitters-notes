@@ -18,8 +18,8 @@ const cardInfo = [
   {
     id: 3,
     title: 'overview',
-  }
-]
+  },
+];
 
 export default function Home() {
   return (
@@ -33,8 +33,16 @@ export default function Home() {
         height: '100vh',
       }}
     >
-      <Box sx={{ maxWidth: '850px', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '20px' }}>
-        {cardInfo.map((card) => (
+      <Box
+        sx={{
+          maxWidth: '850px',
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          gap: '20px',
+        }}
+      >
+        {cardInfo.map(card => (
           <CardCustom key={card.id} {...card} />
         ))}
       </Box>
