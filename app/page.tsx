@@ -1,5 +1,5 @@
 'use client';
-import CardCustom from '@/components/CardCustom/CardCustom';
+import CardCustom from '@/ui/CardCustom/CardCustom';
 import { Box, Grid } from '@mui/material';
 
 const cardInfo = [

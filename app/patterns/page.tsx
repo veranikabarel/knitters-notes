@@ -1,9 +1,13 @@
-async function getData() {
-  const url = process.env.RAVELRY_BASE_URL;
-  const username = process.env.RAVELRY_USERNAME;
-  const password = process.env.RAVELRY_PASSWORD;
+import SearchBar from '@//modules/SearchBar/SearchBar';
+import Categories from '@/modules/Categories/Categories';
+import PatternGallery from '@/modules/PatternGallery/PatternGallery';
 
-  const res = await fetch(`${url}/pattern_categories/list.json`, {
+const url = process.env.RAVELRY_BASE_URL;
+const username = process.env.RAVELRY_USERNAME;
+const password = process.env.RAVELRY_PASSWORD;
+
+async function getPatterns() {
+  const res = await fetch(`${url}/patterns.json?ids=600+601`, {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Basic ${btoa(username + ':' + password)}`,
@@ -16,15 +20,24 @@ async function getData() {
 }
 
 export default async function PatternLibrary() {
-  const data = await getData();
-  console.log('data', data.pattern_categories.children);
+  const data = await getPatterns();
+  console.log(data);
 
   return (
     <div>
-      <h2>Categories</h2>
-      {data?.pattern_categories?.children.map((pattern: any) => {
-        return <div key={pattern.id}>{pattern.long_name}</div>;
-      })}
+      <div>
+        {/* @ts-expect-error Server Component */}
+        <SearchBar />
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div>
+          {/* @ts-expect-error Server Component */}
+          <Categories />
+        </div>
+        <div>
+          <PatternGallery />
+        </div>
+      </div>
     </div>
   );
 }
