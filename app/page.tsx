@@ -1,5 +1,5 @@
 'use client';
-import CardCustom from '@/ui/CardCustom/CardCustom';
+import CardCustom from '@/app/components/ui/CardCustom/CardCustom';
 import { Box, Grid } from '@mui/material';
 
 const cardInfo = [
@@ -16,7 +16,7 @@ const cardInfo = [
     title: 'patterns',
   },
   {
-    id: 3,
+    id: 4,
     title: 'overview',
   },
 ];
@@ -43,7 +43,7 @@ export default function Home() {
         }}
       >
         {cardInfo.map(card => (
-          <CardCustom key={card.id} {...card} />
+          <CardCustom data-testId="card" key={card.id} {...card} />
         ))}
       </Box>
     </Grid>

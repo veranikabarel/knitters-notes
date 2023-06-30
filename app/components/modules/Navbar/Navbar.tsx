@@ -12,7 +12,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Link from 'next/link';
 import * as React from 'react';
 
-const pages = ['projects', 'notes', 'patterns', 'overwiev'];
+const pages = ['projects', 'notes', 'patterns', 'overview'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -113,7 +113,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src="" />
               </IconButton>
             </Tooltip>
             <Menu
