@@ -1,25 +1,23 @@
-{
-  "projects": [
-    {
-      "id": "1",
-      "img": "/images/wool.png",
-      "alt": "Project 1",
-      "title": "Project 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      "id": "2",
-      "img": "/images/wool.png",
-      "alt": "Project 2",
-      "title": "Project 2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      "id": "3",
-      "img": "/images/wool.png",
-      "alt": "Project 3",
-      "title": "Project 3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "img": "/images/wool.png",
+    "alt": "Project 1",
+    "title": "Project 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": "2",
+    "img": "/images/wool.png",
+    "alt": "Project 2",
+    "title": "Project 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": "3",
+    "img": "/images/wool.png",
+    "alt": "Project 3",
+    "title": "Project 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]

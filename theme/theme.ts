@@ -2,18 +2,18 @@
 
 import { colors, text } from '@/theme/colors';
 import { createTheme } from '@mui/material/styles';
-import { Montserrat } from 'next/font/google';
+// import { Montserrat } from 'next/font/google';
 import { typeScale } from './typography';
 
-export const inter = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  fallback: ['Montserrat', 'sans-serif'],
-});
+// export const inter = Montserrat({
+//   subsets: ['latin'],
+//   weight: ['400', '500', '700'],
+//   fallback: ['Montserrat', 'sans-serif'],
+// });
 
 export const theme = createTheme({
   typography: {
-    fontFamily: inter.style.fontFamily,
+    // fontFamily: inter.style.fontFamily,
     h1: {
       fontSize: typeScale.header1,
     },
