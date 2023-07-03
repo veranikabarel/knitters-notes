@@ -1,3 +1,10 @@
+'use client';
+import { Grid } from '@mui/material';
+
 export default function Projects() {
-  return <div>Projects</div>;
+  return (
+    <Grid container>
+      <Grid item>Projects</Grid>
+    </Grid>
+  );
 }

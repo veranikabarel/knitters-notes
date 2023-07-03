@@ -92,7 +92,13 @@ function Navbar() {
           </Box>
 
           {/* DESKTOP VERSION */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+
+              display: { xs: 'none', md: 'flex' },
+            }}
+          >
             {pages.map(page => (
               <MenuItem key={page} onClick={handleCloseNavMenu}>
                 <Link

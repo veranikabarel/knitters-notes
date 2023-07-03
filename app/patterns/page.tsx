@@ -1,72 +1,47 @@
 'use client';
 
 import SearchBar from '@/app/components/modules/Navbar/SearchBar/SearchBar';
-import ImgCardCustom from '@/app/components/ui/ImgCardCustom/ImgCardCustom';
 import '@/mock/projects.json';
 import {
-  Box,
-  Container,
   FormControl,
   FormControlLabel,
-  Pagination,
+  Grid,
   Radio,
   RadioGroup,
 } from '@mui/material';
 
 export default function PatternLibrary() {
   return (
-    <Container
-      sx={{
-        height: '100vh',
-      }}
-    >
-      <SearchBar />
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          mt: '60px',
-          minHeight: '650px',
-        }}
+    <Grid container>
+      <Grid
+        item
+        xs={12}
+        sx={{ m: '40px 0', display: 'flex', justifyContent: 'center' }}
       >
-        <Box
-          sx={{
-            marginRight: '60px',
-          }}
-        >
-          <FormControl>
-            <RadioGroup
-              aria-labelledby="demo-radio-buttons-group-label"
-              defaultValue="clothing"
-              name="radio-buttons-group"
-            >
-              <FormControlLabel
-                value="clothing"
-                control={<Radio />}
-                label="Clothing"
-              />
-              <FormControlLabel
-                value="accessories"
-                control={<Radio />}
-                label="Accessories"
-              />
-              <FormControlLabel value="toys" control={<Radio />} label="Toys" />
-            </RadioGroup>
-          </FormControl>
-        </Box>
-
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            gap: '20px ',
-          }}
-        >
-          <ImgCardCustom alt="" src="" title="" />
-        </Box>
-      </Box>
-      <Pagination count={10} />
-    </Container>
+        <SearchBar />
+      </Grid>
+      <Grid item xs={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+        <FormControl>
+          <RadioGroup
+            aria-labelledby="demo-radio-buttons-group-label"
+            defaultValue="clothing"
+            name="radio-buttons-group"
+          >
+            <FormControlLabel
+              value="clothing"
+              control={<Radio />}
+              label="Clothing"
+            />
+            <FormControlLabel
+              value="accessories"
+              control={<Radio />}
+              label="Accessories"
+            />
+            <FormControlLabel value="toys" control={<Radio />} label="Toys" />
+          </RadioGroup>
+        </FormControl>
+      </Grid>
+      <Grid item xs={8} sx={{ mb: '20px' }}></Grid>
+    </Grid>
   );
 }
