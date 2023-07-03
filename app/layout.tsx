@@ -29,7 +29,7 @@ export default function RootLayout(props: MyAppProps) {
             <body suppressHydrationWarning={true}>
               <Navbar data-testId="navbar" />
               {children}
-              <ReactQueryDevtools initialIsOpen />
+              <ReactQueryDevtools />
             </body>
           </ThemeProvider>
         </CacheProvider>
