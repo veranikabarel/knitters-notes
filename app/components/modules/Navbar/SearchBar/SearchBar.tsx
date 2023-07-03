@@ -1,6 +1,6 @@
 'use client';
 import SearchIcon from '@mui/icons-material/Search';
-import { Container, InputAdornment, TextField } from '@mui/material';
+import { InputAdornment, TextField } from '@mui/material';
 import { useState } from 'react';
 
 export default function SearchBar() {
@@ -11,30 +11,30 @@ export default function SearchBar() {
   };
 
   return (
-    <Container
-      maxWidth="md"
-      sx={{
-        mt: 4,
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
+    // <Container
+    //   maxWidth="md"
+    //   sx={{
+    //     mt: 4,
+    //     display: 'flex',
+    //     flexDirection: 'row',
+    //     justifyContent: 'center',
+    //   }}
+    // >
+    <TextField
+      id="search"
+      type="search"
+      label="Search"
+      value={searchTerm}
+      onChange={handleChange}
+      sx={{ width: 400 }}
+      InputProps={{
+        endAdornment: (
+          <InputAdornment position="end">
+            <SearchIcon />
+          </InputAdornment>
+        ),
       }}
-    >
-      <TextField
-        id="search"
-        type="search"
-        label="Search"
-        value={searchTerm}
-        onChange={handleChange}
-        sx={{ width: 400 }}
-        InputProps={{
-          endAdornment: (
-            <InputAdornment position="end">
-              <SearchIcon />
-            </InputAdornment>
-          ),
-        }}
-      />
-    </Container>
+    />
+    // </Container>
   );
 }

@@ -1,4 +1,5 @@
 'use client';
+import Footer from '@/app/components/modules/Navbar/Footer';
 import Navbar from '@/app/components/modules/Navbar/Navbar';
 import Head from '@/app/head';
 import { theme } from '@/theme/theme';
@@ -30,6 +31,7 @@ export default function RootLayout(props: MyAppProps) {
               <Navbar data-testId="navbar" />
               {children}
               <ReactQueryDevtools />
+              <Footer />
             </body>
           </ThemeProvider>
         </CacheProvider>

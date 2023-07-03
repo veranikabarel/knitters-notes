@@ -1,6 +1,6 @@
 'use client';
 import CardCustom from '@/app/components/ui/CardCustom/CardCustom';
-import { Box, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 
 const cardInfo = [
   {
@@ -23,29 +23,23 @@ const cardInfo = [
 
 export default function Home() {
   return (
-    <Grid
-      container
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-      }}
-    >
-      <Box
+    <Grid container sx={{ justifyContent: 'center' }}>
+      <Grid
+        item
         sx={{
-          maxWidth: '850px',
           display: 'flex',
           flexDirection: 'row',
           flexWrap: 'wrap',
+          flexBasis: '50%',
+          justifyContent: 'center',
           gap: '20px',
+          // margin: '60px',
         }}
       >
         {cardInfo.map(card => (
           <CardCustom data-testId="card" key={card.id} {...card} />
         ))}
-      </Box>
+      </Grid>
     </Grid>
   );
 }
